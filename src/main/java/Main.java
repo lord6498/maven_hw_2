@@ -5,10 +5,8 @@ public class Main {
         long amount = 1000_60;
         boolean registered = true;
 
-        long expected = 30;
-        long actual = service.calculate(amount, registered);
-        boolean passed = expected == actual;
-        System.out.print(passed);
+        long bonus = service.calculate(amount, registered);
+        System.out.print(bonus);
 
     }
 }
